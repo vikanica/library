@@ -1,6 +1,6 @@
 <?php
-require '../vendor/autoload.php';
-    $db = new \atk4\data\Persistence_SQL('mysql:host=127.0.0.1;dbname=main;charset=utf8', 'root', '');
+require 'vendor/autoload.php';
+    $db = new \atk4\data\Persistence_SQL('mysql:host=127.0.0.1;dbname=library;charset=utf8', 'root', '');
 class Librarian extends \atk4\data\Model {
 	public $table = 'librarians';
 function init() {
@@ -58,4 +58,5 @@ function init() {
 
 
 
-  $this->hasMany('Record', new Record);
+
+  //$this->hasMany('Record', new Record);
